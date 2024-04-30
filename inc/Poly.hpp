@@ -18,7 +18,7 @@ public:
   Poly();
   Poly(int n);
   Poly( const Poly &other);
-  Poly(int n, std::string &c);
+  Poly(int n, std::string c);
   Poly inv();
   int degree() const;
 
@@ -33,7 +33,7 @@ public:
 
   void assign(int degree, Expr exp);
   void set_degree(int n);
-  std::string to_string();
+  std::string to_string() const;
   const std::vector<Expr> & get_coeff() const;
 private:
   std::vector<Expr> poly_coeff;

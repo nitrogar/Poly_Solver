@@ -8,7 +8,8 @@ int main() {
   Poly fz(10);
 
   Poly fy = fx + fz;
-  std::cout << "far awya" << std::endl;
   std::cout << fy.to_string() << std::endl;
+  std::cout << fx.to_string() << std::endl;
+  std::cout << fz.to_string() << std::endl;
   return 0;
 }
